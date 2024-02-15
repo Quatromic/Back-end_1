@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="error.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Error">
+        <h1>Error Page</h1>
+        <p>No page like this exists</p>
+        <a id="return" href="index.html">Go back</a>
+    </div>
+    <script>
+        document.getElementById("return").onclick = () => {
+            window.location = "localhost:8500"
+        }
+    </script>
+</body>
+</html>

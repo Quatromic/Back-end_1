@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Protest+Riot&display=swap');
+:root{
+    --header-font:'Oswald',sans-serif;
+    --text-font:'Open Sans',sans-serif;
+    --beauty-font:'Dancing Script',sans-serif;
+    --beauty2-font:'Lobster Two',sans-serif;
+    --Riot-font:'Protest Riot',sans-serif;
+    --light-weight:lighter;
+}
+*{
+    color:white;
+}
+#Page1 img{
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+}
+#intro{
+    display: flex;
+    margin:0 auto;
+    width:90%;
+}
+#intro h1{
+    font-family:var(--beauty2-font);
+    text-decoration: underline;
+}
+#intro nav ul{
+    list-style: none;
+    display:flex;
+    position: relative;
+    left:650px;
+    width:350px;
+    top:20px;
+    justify-content: space-between;
+}
+#intro nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-family:var(--text-font);
+    font-weight: var(--light-weight);
+    position: relative;
+}
+#intro nav ul li a::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition:transform .5s ease-in-out;
+}
+#intro nav ul li a:hover{
+    cursor: pointer;
+}
+#intro nav ul li a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+/*Illustrations*/

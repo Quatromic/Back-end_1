@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Protest+Riot&display=swap');
+:root{
+    --header-font:'Oswald',sans-serif;
+    --text-font:'Open Sans',sans-serif;
+    --light-weight:lighter;
+}
+body{
+    background:linear-gradient(#f6cfbe,#b9dcf2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#Error{
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+    top:300px;
+    border:1px solid black;
+    width:350px;
+    padding-bottom:20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 10px rgb(200,200,200);
+    color:black;
+}
+#Error h1{
+    text-decoration: underline;
+    font-family:var(--header-font);
+    font-weight: var(--light-weight);
+}
+#Error p{
+    font-family:var(--text-font);
+    font-weight: var(--light-weight);
+}
+#Error a{
+    color:black;
+    font-family:var(--header-font);
+    font-weight:var(--light-weight);
+    text-decoration: none;
+    position: relative;
+}
+#Error a:hover{
+    cursor: pointer;
+}
+#Error a::after{
+    content: '';
+    width:100%;
+    height:1px;
+    background-color: black;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition:transform .5s ease-in-out;
+}
+#Error a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
